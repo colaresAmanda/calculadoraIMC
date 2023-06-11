@@ -1,9 +1,10 @@
 # Calculadora de IMC
-Esta é uma calculadora de Índice de Massa Corporal (IMC) simples, desenvolvida em HTML, CSS e JavaScript. O IMC é uma medida que estima se uma pessoa está com um peso saudável em relação à sua altura.
+Esta é uma calculadora de Índice de Massa Corporal (IMC) simples, desenvolvida em HTML, CSS e JavaScript. 
+
 
 ![img](https://github.com/colaresAmanda/calculadoraIMC/assets/83729891/1c379bd1-8019-419d-8a33-08364796336f)
 
-
+O IMC é uma medida que estima se uma pessoa está com um peso saudável em relação à sua altura.
 ## Como usar
 
    - Baixe os arquivos HTML, CSS e JavaScript e coloque-os na mesma pasta no seu computador.
