@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="get-data">
+        <h1 class="title">Calculadora de IMC</h1>
+        <div id="error-message"></div>
+        <form id="get-user-data">
+          <div class="form-control">
+            <label for="altura">Altura</label>
+            <input type="number" step="0.01" id="altura" placeholder="Digite sua altura" />
+          </div>
+          <div class="form-control">
+            <label for="peso">Peso</label>
+            <input type="number" step="0.01" id="peso" placeholder="Digite seu peso" />
+          </div>
+          <div class="form-control">
+            <button type="submit">Calcular IMC</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="graph">
+        <div class="circular-container">
+          <div class="circles">
+            <div class="circular-progress-background"></div>
+            <div class="circular-progress">
+              <div class="circular-info">
+                <p class="title">IMC</p>
+                <p class="value" id="user-info_imc">00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-info">
+            <p id="text">Altura: <span id="user-info_altura">0.0</span></p>
+            <p id="text">Peso: <span id="user-info_peso">0.0</span></p>
+          </div>
+        </div>
+
+        <div class="info">
+          <ul>
+            <li>Abaixo do peso normal</li>
+            <li>Peso Normal</li>
+            <li>Excesso de peso</li>
+            <li>Obesidade classe I</li>
+            <li>Obesidade classe II</li>
+            <li>Obesidade classe III</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
