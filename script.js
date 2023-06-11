@@ -37,8 +37,11 @@ function showUserInfo(altura, peso, imc, circularComponent) {
     user_imc.textContent = imc;
 
     // Update the circular progress component based on the BMI value
-    circularProgress(imc, circularComponent);
+
+        circularProgress(imc, circularComponent);
 }
+
+
 
 function setErrorMessage(messageComponent, text) {
     // Display an error message on the screen
@@ -80,7 +83,10 @@ function onSubmit(e, messageComponent, circularComponent) {
 
     // Calculate the BMI and show user information on the screen
     const imc = calculateBMI(altura, peso);
-    showUserInfo(altura, peso, imc, circularComponent);
+    if (!isNaN(imc) && !isNaN(altura) && !isNaN(peso)) {
+        showUserInfo(altura, peso, imc, circularComponent);
+    
+    }
 }
 
 function init() {
